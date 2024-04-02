@@ -1,7 +1,6 @@
 * {
     font-family: 'GeneraleStationRegular';
-    font-weight: normal;
-    font-style: normal;
+    
     box-sizing: border-box;
 }
 
@@ -19,12 +18,44 @@ body {
     /* height: 1000px; */
 }
 
+#img-logo-container {
+    flex: 0 2 0;
+    display: flex;
+    position: relative;
+    
+}
+
+#logo-container {
+    flex: 0 2 0;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    top: 30%;
+    margin: auto;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    margin: 0;
+    color: white;
+}
+
 main {
     flex: 1 1 auto;
     display: flex;
-    background-color: white;
+    background-color: rgb(231, 231, 231);
     flex-direction: column;
     justify-content: center;
+}
+
+main form section i {
+    font-style: italic;
 }
 
 #form-description {
@@ -34,6 +65,7 @@ main {
 #main-form {
     padding: 2rem;
     box-shadow: 0px 5px 10px rgb(153, 153, 153);
+    background-color: white;
 }
 
 h3 {
