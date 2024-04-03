@@ -1,7 +1,16 @@
 * {
-    font-family: 'GeneraleStationRegular';
     
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: pacifico-regular;
+    src: url(./Pacifico-Regular.ttf);
 }
 
 body {
@@ -11,6 +20,7 @@ body {
     margin: 0 auto;
     width: 70%;
     background-color: black;
+    font-family: pacifico-regular, Georgia, 'Times New Roman', Times, serif;
 }
 
 #background-image {
@@ -38,12 +48,13 @@ body {
     padding: 10px 0;
 }
 
-h1 {
+#logo-container h1 {
     display: flex;
     align-items: center;
     font-size: 70px;
     margin: 0;
     color: white;
+    font-family: norse-bold, Georgia, 'Times New Roman', Times, serif;
 }
 
 main {
@@ -52,7 +63,10 @@ main {
     background-color: rgb(231, 231, 231);
     flex-direction: column;
     justify-content: center;
+    height:100vh;
 }
+
+
 
 main form section i {
     font-style: italic;
@@ -60,21 +74,38 @@ main form section i {
 
 #form-description {
     padding: 2rem;
+    font-size: 22px;
 }
 
 #main-form {
     padding: 2rem;
     box-shadow: 0px 5px 10px rgb(153, 153, 153);
     background-color: white;
+    font-size: 12px;
+
 }
 
-h3 {
+#main-form h3 {
     margin-top: 0;
+    font-size: 22px;
+    font-weight: lighter;
 }
 
 #form-inputs {
     display: flex;
     width: 80%;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 15rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-color: black;
+}
+
+label {
+    letter-spacing: 2px;
 }
 
 #form-inputs div {
@@ -86,6 +117,27 @@ h3 {
     margin-left: 4rem;
 }
 
+button {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    background-color: brown;
+    border-color:none;
+    border: 0px;
+    border-radius: 5px;
+    color: antiquewhite;
+    font-family: pacifico-regular, Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 button, footer {
     margin: 1rem 2rem 0 2rem;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
 }
