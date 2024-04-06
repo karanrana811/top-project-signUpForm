@@ -1,5 +1,4 @@
 * {
-    
     box-sizing: border-box;
 }
 
@@ -24,46 +23,70 @@ body {
 }
 
 #background-image {
-    flex: 0 2 0;
+    flex: 0 1 auto;
     /* height: 1000px; */
 }
 
 #img-logo-container {
-    flex: 0 2 0;
+    flex: 0 1 auto;
     display: flex;
     position: relative;
     
 }
 
 #logo-container {
-    flex: 0 2 0;
-    height: 100px;
+    flex: 0 1 auto;
+    height: 150px;
     position: absolute;
     width: 100%;
     display: flex;
     background-color: rgba(0,0,0,0.5);
     top: 30%;
-    margin: auto;
     justify-content: center;
+    text-align: center;
     padding: 10px 0;
 }
 
 #logo-container h1 {
     display: flex;
     align-items: center;
-    font-size: 70px;
+    font-size: 100px;
     margin: 0;
     color: white;
     font-family: norse-bold, Georgia, 'Times New Roman', Times, serif;
+    flex: 0 1 auto;
+}
+
+#logo-container img {
+    flex: 0 1 auto;
+}
+
+#photo-cred {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    
 }
 
 main {
-    flex: 1 1 auto;
-    display: flex;
+    flex: 0 1 auto;
     background-color: rgb(231, 231, 231);
     flex-direction: column;
     justify-content: center;
     height:100vh;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    align-items: flex-start;
+    justify-content: center;
+    flex: 0 1 auto;
 }
 
 
@@ -72,9 +95,11 @@ main form section i {
     font-style: italic;
 }
 
+
 #form-description {
     padding: 2rem;
     font-size: 22px;
+    flex: 0 1 auto;
 }
 
 #main-form {
@@ -82,18 +107,23 @@ main form section i {
     box-shadow: 0px 5px 10px rgb(153, 153, 153);
     background-color: white;
     font-size: 12px;
-
+    flex: 0 1 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #main-form h3 {
     margin-top: 0;
     font-size: 22px;
     font-weight: lighter;
+    flex: 0 1 auto;
 }
 
 #form-inputs {
     display: flex;
     width: 80%;
+    flex: 0 1 auto;
 }
 
 input {
@@ -102,15 +132,18 @@ input {
     padding: 0.5rem;
     border-radius: 5px;
     border-color: black;
+    flex: 0 1 auto;
 }
 
 label {
     letter-spacing: 2px;
+    flex: 0 1 auto;
 }
 
 #form-inputs div {
     display: flex;
     flex-direction: column;
+    flex: 0 1 auto;
 }
 
 #col-two {
@@ -121,12 +154,12 @@ button {
     padding: 0.5rem 2rem;
     font-size: 1rem;
     background-color: brown;
-    border-color:none;
     border: 0px;
     border-radius: 5px;
     color: antiquewhite;
     font-family: pacifico-regular, Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 2px;
+
 }
 
 button:hover {
@@ -135,6 +168,8 @@ button:hover {
 
 button, footer {
     margin: 1rem 2rem 0 2rem;
+    flex: 0 1 auto;
+
 }
 
 a {
