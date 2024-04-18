@@ -98,7 +98,7 @@ main form section i {
 
 #form-description {
     padding: 2rem;
-    font-size: 22px;
+    font-size: 1rem;
     flex: 0 1 auto;
 }
 
@@ -132,12 +132,22 @@ input {
     padding: 0.5rem;
     border-radius: 5px;
     border-color: black;
+    border-top-style: outset;
+    border-width: 1rem;
+    border-left-style: outset;
     flex: 0 1 auto;
 }
+
 
 label {
     letter-spacing: 2px;
     flex: 0 1 auto;
+}
+
+input:active, input:focus, label:active, label:focus {
+    border-color: blue;
+    box-shadow: 0px 5px 10px rgb(153, 153, 153);
+
 }
 
 #form-inputs div {
@@ -175,4 +185,8 @@ button, footer {
 a {
     color: brown;
     text-decoration: none;
+}
+
+#email:invalid {
+    border-color: red;
 }

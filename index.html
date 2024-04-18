@@ -23,19 +23,19 @@
                 <h3>Let's do this!</h3>
                 <div id="form-inputs">
                     <div id="col-one">
-                        <label for="fName" id="fNameLabel">FIRST NAME</label>
-                        <input type="text" id="fName">
-                        <label for="email" id="emailLabel">EMAIL</label>
-                        <input type="email" id="email">
-                        <label for="password" id="passwordLabel">PASSWORD</label>
-                        <input type="password" id="password">
+                        <label for="fName" id="fNameLabel">FIRST NAME*</label>
+                        <input type="text" id="fName" required>
+                        <label for="email" id="emailLabel">EMAIL*</label>
+                        <input type="email" id="email" required>
+                        <label for="password" id="passwordLabel">PASSWORD*</label>
+                        <input type="password" id="password" required>
                     </div>
                     <div id="col-two">
                         <label for="lastName" id="lastNameLabel">LAST NAME</label><input id='lastName' type="text">
                         <label for="phoneNumber" id="phoneNumberLabel">PHONE NUMBER</label>
                         <input id='phoneNumber' type="tel">
-                        <label for="confirmPassword" id="confirmPasswordLabel">CONFIRM PASSWORD</label>
-                        <input type="password">
+                        <label for="confirmPassword" id="confirmPasswordLabel">CONFIRM PASSWORD*</label>
+                        <input type="password" id='confirmPassword' required>
                     </div>
                 </div>
                 
@@ -44,5 +44,7 @@
                 <footer>Already have an account? <a href="#">Log in</a></footer>
         </form>
     </main>
+
+    <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
